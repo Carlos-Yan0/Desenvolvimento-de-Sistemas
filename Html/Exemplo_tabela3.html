@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Tabelas</title>
+</head>
+<body>
+
+<!-- Essa primeira tabela nos mostra como alinhar as celulas, para alinhar usamos "align" seguido da posição
+center(centro), left(esquerda) e right(direita).  -->
+
+    <center><h1>ALINHAMENTO DE TABELA E CELULAS</h1></center>
+    <table border="1" align="center">
+        <td>Primeira Celula</td>
+        <td>Segunda Celula</td>
+        <td>Terceira Celula</td>
+        
+        <tr>
+            <td align="center">centro</td>
+            <td align="left">Esquerda</td>
+            <td align="right">Direita</td>
+        </tr>
+    </table>
+    <br><br>
+
+
+<!-- Essa segunda tabela se trata do uso do cellspacing separa as celulas da borda,
+o numero selecionado é a distancia da borda em relação a celula.
+width é o largura, nesse caso da tabela. -->
+    
+    <center><h1>USO DO CELLSPACING </h1></center>
+    <table border="1" width="80%" cellspacing="24" align="left">
+        <tr>
+            <td width="33%">Coluna I</td>
+            <td width="33%">Coluna II</td>
+            <td width="34%">Coluna III</td>
+        </tr>
+       
+    </table>
+    <br><br><br><br><br>
+    
+    <!-- Cellpadding é o espaço entre a celula e os elementos em seu interior -->
+    <center><h1>USO DO CELLPADDING</h1></center>
+    <table border="1" width="80%" cellpadding="24" align="left">
+        <tr>
+            <td width="33%" align="center">Aluno</td>
+            <td width="33%" align="center">Professor</td>
+            <td width="34%" align="center">Tec. Desenv</td>
+        </tr>
+       
+    </table>
+
+    <br><br><br><br><br>
+    <center><h1>USO DO ROWSPAN</h1></center>
+    <table border="3" width="90%" cellpadding="7" align="center">
+        <tr>
+            <td width="16%" rowspan="4">3 Linhas</td>
+            <td width="16%" >L1 coluna 2</td>
+            <td width="16%">L1 coluna 3</td>
+            <td width="17%">L1 coluna 4</td>
+            <td width="17%">L1 coluna 5</td>
+        </tr>
+            <td width="16%" >L2 coluna 2</td>
+            <td width="16%">L2 coluna 3</td>
+            <td width="17%">L2 coluna 4</td>
+            <td width="17%">L2 coluna 5</td>
+        <tr>
+
+        <tr>
+            <td width="16%" >L3 coluna 2</td>
+            <td width="16%">L3 coluna 3</td>
+            <td width="17%">L3 coluna 4</td>
+            <td width="17%">L3 coluna 5</td>
+        </tr>
+
+       
+    </table>
+
+    <br><br><br><br><br>
+    <center><h1>USO DO COLSPAN</h1></center>
+    <table border="3" width="80%" cellpadding="7" align="center">
+        <tr>
+            <td width="24%" colspan="3">Celula com 3 colunas</td>
+            <td width="20%" >L1 coluna 2</td>
+            <td width="20%">L1 coluna 3</td>
+        </tr>
+            <td width="16%" bgcolor="green">L2 coluna 2</td>
+            <td width="16%" bgcolor="blue">L2 coluna 3</td>
+            <td width="17%" bgcolor="yellow">L2 coluna 4</td>
+            <td width="24%" colspan="2" bgcolor="red">Celula com 2 colunas</td>
+        <tr>
+
+       
+    </table>
+    
+    
+    
+</body>
+</html>
