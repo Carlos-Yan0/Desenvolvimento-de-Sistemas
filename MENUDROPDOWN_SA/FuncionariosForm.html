@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02 - tabelas/formularios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(240, 206, 16);
+        }
+        li{
+            float: left;
+        }
+        li a, .dropbtn{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover, .dropdown:hover .dropbtn{
+
+            background-color: rgb(0, 60, 255);
+        }
+        li .dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: yellow;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a{
+            color: rgb(255, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover{
+            background-color: pink;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="paginaInicial.html">Inicio</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+            <div class="dropdown-content">
+                <a href="At-ProdutosSA.html">Produtos</a>
+                <a href="formFornecedor.html">Fornecedores</a>
+                <a href="FuncionariosForm.html">Funcionarios</a>
+                <a href="Micael.html">Clientes</a>
+                <a href="#">Yan Carlos de Oliveira!</a>
+            </div>
+        </li>
+    </ul>
+    <center>
+        <table border="0" cellpadding="10" cellspacing="0">
+            <form method="post" action="#">
+                <tr>
+                    <th rowspan="2"><img src="image/Mokele.png" alt="Mokele Img" width="100px"></th>
+                    <th colspan="4">Cadastro de Funcionarios</th>
+                </tr>
+                <tr>
+                    <td>Nome:</td>
+                    <td colspan="3"><Input type="text" placeholder="Digite seu nome"></Input></td>
+                </tr>
+                <tr>
+                    <td>Numero:</td>
+                    <td><input type="text" placeholder="Digite seu número" maxlength="15"></td>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Digite seu Email"></td>
+                </tr>
+                <tr>
+                    <td>CPF:</td>
+                    <td><input type="text" placeholder="Digite seu CPF" maxlength="11"></td>
+                    <td>Data de Nascimento:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Data de admissão:</td>
+                    <td><input type="date"></td>
+                    <td>Cargo:</td>
+                    <td>
+                        <select name="Cargo">
+                            <option value="administrador">administrador</option>
+                            <option value="Analista de Vendas">Analista de Vendas</option>
+                            <option value="Controlador de Estoque">Controlador de Estoque</option>
+                            <option value="Caixa">Caixa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="reset" value="reset"></td>
+                    <td colspan="2" align="center"><input type="submit" value="submit"></td>
+                </tr>
+            </form>
+        </table>
+
+        <address>
+            Yan Carlos de Oliveira - Estudante - Desenvolvimento de sistemas
+        </address>
+    </center>
+
+    <!-- eu(yan) -->
+</body>
+</html>

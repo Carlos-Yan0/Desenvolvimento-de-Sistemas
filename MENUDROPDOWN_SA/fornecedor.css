@@ -1,0 +1,46 @@
+.logo-td {
+    background-image: url("img/mokelinho.png");
+    background-size: contain;  /* ajusta ao tamanho */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70px;
+    width: 80px;
+}
+.titulo-td {
+    font-size: 60px;
+}
+
+
+body {
+    background-image:url(img/mokele-general-bg.png);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 1.1em;
+    color: var(--cor-texto);
+    padding-left: 65px;
+}
+input,
+select,
+textarea {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    width: 80%;
+    margin-bottom: 12px;
+    font-size: 1em;
+    background: #faf8f6;
+    transition: border 0.2s;
+}
+td{
+    background-color: #f3a853;
+    
+}
+th{
+    background-color: #f3a853
+    
+}
+input[type="text"] {
+    border-radius: 10px;
+}
