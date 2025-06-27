@@ -1,25 +1,48 @@
-body{
-    background-color:rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+:root {
+    --cor-primaria: #f3a853;
+    --cor-secundaria: #967345;
+    --cor-fundo: #fff;
+    --cor-texto: #222;
+    --cor-botao-cancelar: #fff;
+    --cor-botao-cancelar-borda: #f3a853;
+    --cor-link: #967345;
+    --radius: 16px;
+    --sombra: 0 0px 10px #f3a85375;
+    --fonte-principal: 'Poppins', sans-serif;
+    --espaco-padrao: 20px;
 }
 
-input, select, ::placeholder{
-    background-color: rgb(191, 252, 206);
-    border-radius: 12px;
-    border-color: rgb(96, 224, 135);
-    padding: 4px 10px;
-    color: rebeccapurple;
+input,
+select,
+textarea {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: var(--radius);
+    padding: 10px 4px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 1em;
+    background: #faf8f6;
+    transition: border 0.2s;
 }
 
-table{
-    background-color: rgb(0, 255, 179);
-    border-radius: 16px;
+input:focus,
+select:focus{
+    border-color: var(--cor-primaria);
+    outline: none;
 }
 
-address{
-    color: red;
-    position: relative;
-    top: 50px;
+input::placeholder {
+    color: var(--cor-secundaria);
+    opacity: 0.8;
 }
 
-/*FIZ NA PRESSA E POR ISSO NAO ESTA PARECIDO COM MEU SISTEMA!!
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: var(--espaco-padrao);
+}
+
+
