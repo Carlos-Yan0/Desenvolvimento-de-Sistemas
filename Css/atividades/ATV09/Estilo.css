@@ -1,0 +1,15 @@
+h1, h3{
+    position: relative;
+    left: 150px;
+}
+
+p{
+    color: blue;
+}
+
+img{
+    position: absolute;
+    top: 270px;
+    left: 220px;
+
+}
