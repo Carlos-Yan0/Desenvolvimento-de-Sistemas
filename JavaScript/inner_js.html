@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pula JavaScript</title>
-    <script type="text/JavaScript" src="js/jquery.js"></script>
-    <script>
-        function botao1(){
-            alert("Você apertou \no botão 1")
-        }
-    </script>
+    <title>InnerHtml</title>
 </head>
 <body>
-    <input type="button" onclick="botao1()" value="Botão 1">
+    <h1>Minha Página</h1>
+    <p id="demo"></p>
+    <p id="conta"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Você chegou até aqui!";
+        document.getElementById("conta").innerHTML = 5+1;
+    </script>
     
+
 
     <center>
         <address>

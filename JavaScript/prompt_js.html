@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt js</title>
+
+    <script>
+        function myFunction(){
+            var x;
+            var idade=prompt("Digite sua idade: ")
+            if(idade != null){
+                x = "Idade: " + idade + " anos";
+                document.getElementById("demo").innerHTML=x;
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Clique para exibir</p>
+    <button onclick="myFunction()">Clique Aqui</button>
+    <p id="demo"></p>
+
+
+    <center>
+        <address>
+            Yan Carlos de Oliveira - Estudante - Desenvolvimento de sistemas
+        </address>
+    </center>
+</body>
+</html>
