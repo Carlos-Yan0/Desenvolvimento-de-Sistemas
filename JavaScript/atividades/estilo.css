@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input, select, ::placeholder{
+    background-color: rgb(191, 252, 206);
+    border-radius: 12px;
+    border-color: rgb(96, 224, 135);
+    padding: 4px 10px;
+    color: rebeccapurple;
+}
+
+table{
+    background-color: rgb(0, 255, 179);
+    border-radius: 16px;
+}
+
+address{
+    color: red;
+    position: relative;
+    top: 50px;
+}
+
+/*FIZ NA PRESSA E POR ISSO NAO ESTA PARECIDO COM MEU SISTEMA!!
